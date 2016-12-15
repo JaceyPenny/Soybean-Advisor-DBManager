@@ -1,0 +1,282 @@
+﻿<UserControl x:Class="Soybean_Advisor_Database_Manager.DataControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             Background="Green"
+             d:DesignHeight="480" d:DesignWidth="640">
+    <Grid>
+        <Label Content="Data Editor" Margin="10,10,10,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TabControl Margin="10,46,10,47">
+            <TabItem Header="Lime Application">
+                <Grid Background="Green">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Soil Texture" Margin="0,0,0,0" FontWeight="Bold" Foreground="White" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Background="White" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.RowSpan="7"/>
+                    <Label Background="White" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="1"/>
+                    <Label Content="Soil Test Ca" Margin="0,0,0,0" Grid.Column="1" FontWeight="Bold" Foreground="White" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Background="White" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="1"/>
+                    <Label Background="White" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="1"/>
+                    <Label Background="White" Grid.Row="5" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="1"/>
+                    <Label Background="White" Grid.Row="6" VerticalAlignment="Top" Grid.ColumnSpan="7" Height="1"/>
+                    <Label Background="White" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Grid.ColumnSpan="5" Height="1"/>
+                    <Label Content="Sandy Loam" Margin="0,0,0,0" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Silt Loam" Margin="0,0,0,0" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Clay Loam" Margin="0,0,0,0" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Clay" Margin="0,0,0,0" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="- - ppm Ca - -" Margin="0,0,0,0" Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="- - - - - - - - - - - - - - - lb ag lime/acre - - - - - - - - - - - - - - -" Margin="0,0,0,0" Grid.Column="2" Grid.ColumnSpan="5" Grid.Row="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <Label Content="&#8804; 500" Margin="0,0,0,0" Grid.Column="1" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="501 - 1,500" Margin="0,0,0,0" Grid.Column="1" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="1,501 - 2,500" Margin="0,0,0,0" Grid.Column="1" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="&#8805; 2,501" Margin="0,0,0,0" Grid.Column="1" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Below Optimum" Margin="0,0,0,0" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Background="White" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.RowSpan="2"/>
+                    <Label Background="White" Grid.Column="3" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.Row="1"/>
+                    <Label Background="White" Grid.Column="4" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.Row="1"/>
+                    <Label Background="White" Grid.Column="6" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.Row="0" Grid.RowSpan="2"/>
+                    <Label Content="Medium" Margin="0,0,0,0" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Optimum" Margin="0,0,0,0" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="&lt; 5" Margin="0,0,0,0" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="5.0 - 5.3" Margin="0,0,0,0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="5.4 - 5.7" Margin="0,0,0,0" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="5.8 - 6.2" Margin="0,0,0,0" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="6.2 - 6.9" Margin="0,0,0,0" Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    <TextBox x:Name="txtr0c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="4000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr1c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="5000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr2c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="6000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr3c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="7000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr0c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="3000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr1c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="4000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr2c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="5000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr3c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="6000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr0c2" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="4" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="2000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr1c2" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="4" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="2500" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr2c2" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="4" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="3000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr3c2" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="4" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="4000" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr0c3" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="5" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr1c3" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="5" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr2c3" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="5" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr3c3" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="5" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr0c4" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="6" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr1c4" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="6" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr2c4" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="6" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="txtr3c4" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="6" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+
+                    <Label Background="White" Grid.Column="2" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1" Grid.RowSpan="7"/>
+                    <Label Background="White" Grid.Column="3" Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1"/>
+                    <Label Background="White" Grid.Column="4" Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1"/>
+                    <Label Background="White" Grid.Column="5" Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1"/>
+                    <Label Background="White" Grid.Column="6" Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Phosphorus Application">
+                <Grid Background="Green">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Soil Test Level" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2" FontWeight="Bold" />
+                    <Label Content="Soil Test Value" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2" FontWeight="Bold" />
+                    <Label Content="Production System" Grid.Column="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold" />
+                    <Label Content="Full Seasoned Soybeans" Grid.Column="2" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                    <Label Content="Wheat and Double-&#13;Crop Soybeans" Grid.Column="3" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                    <Label Content="- - - ppm P - - -" Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="- - - - - lb P₂O₅/acre - - - - -" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Very Low" Grid.Column="0" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Low" Grid.Column="0" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Medium" Grid.Column="0" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Optimum" Grid.Column="0" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Above Optimum" Grid.Column="0" Grid.Row="7" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="&#8804; 15" Grid.Column="1" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="6 - 25" Grid.Column="1" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="26 - 35" Grid.Column="1" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="36 - 50" Grid.Column="1" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="&#8805; 51" Grid.Column="1" Grid.Row="7" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <TextBox x:Name="ptxtr0c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="80" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr1c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="60" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr2c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="40" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr3c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr4c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr0c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="120" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr1c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="90" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr2c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="50" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr3c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ptxtr4c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+
+                    <Label Background="White" Height="1" Grid.Row="2" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="3" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="4" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="5" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="6" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="7" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,0,0" VerticalAlignment="Top" />
+
+                    <Label Background="White" Width="1" Grid.Column="1" Grid.RowSpan="8" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="2" Grid.RowSpan="8" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="3" Grid.Row="3" Grid.RowSpan="5" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Margin="0,0,0,0" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Potassium Application">
+                <Grid Background="Green">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Soil Test Level" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2" FontWeight="Bold" />
+                    <Label Content="Soil Test Value" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2" FontWeight="Bold" />
+                    <Label Content="Production System" Grid.Column="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontWeight="Bold" />
+                    <Label Content="Full Seasoned Soybeans" Grid.Column="2" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                    <Label Content="Wheat and Double-&#13;Crop Soybeans" Grid.Column="3" Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                    <Label Content="- - - ppm K - - -" Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="- - - - - lb K₂O/acre - - - - -" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Very Low" Grid.Column="0" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Low" Grid.Column="0" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Medium" Grid.Column="0" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Optimum" Grid.Column="0" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Above Optimum" Grid.Column="0" Grid.Row="7" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="&#8804; 60" Grid.Column="1" Grid.Row="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="61 - 90" Grid.Column="1" Grid.Row="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="91 - 130" Grid.Column="1" Grid.Row="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="131-175" Grid.Column="1" Grid.Row="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="&#8805; 176" Grid.Column="1" Grid.Row="7" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <TextBox x:Name="ktxtr0c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="160" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr1c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="120" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr2c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="60" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr3c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="50" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr4c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="2" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr0c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="180" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr1c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="120" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr2c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="80" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr3c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="60" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+                    <TextBox x:Name="ktxtr4c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline"/>
+
+                    <Label Background="White" Height="1" Grid.Row="2" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="3" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="4" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="5" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="6" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="7" Grid.ColumnSpan="4" Margin="0,0,0,0" VerticalAlignment="Top" />
+                    <Label Background="White" Height="1" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,0,0" VerticalAlignment="Top" />
+
+                    <Label Background="White" Width="1" Grid.Column="1" Grid.RowSpan="8" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="2" Grid.RowSpan="8" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="3" Grid.Row="3" Grid.RowSpan="5" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Label Background="White" Width="1" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Margin="0,0,0,0" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Insect Thresholds">
+                <Grid Background="Green">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Insects" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1"/>
+                    <Label Content="Sampling Method at 4 areas/acre" Grid.Column="1" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="4" Margin="0,0,0,0"/>
+                    <Label Content="Drop Cloth (8+ shakes)" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+                    <Label Content="Sweepnet (25 samples)" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="1" Margin="0,0,0,0" Grid.ColumnSpan="2"/>
+                    <Label Content="# per Foot Row" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,0,0"/>
+                    <Label Content="# per 25 Sweeps" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="2" Margin="0,0,0,0" Grid.ColumnSpan="2"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Stink bugs - up to R6 growth stage" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" TextAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Stink bugs - R6 to R6.5 growth stage (Do not treat after R6.5)" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" TextAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Red Banded stink bug" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="5" Margin="0,0,0,0"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Soybean looper, cabbage looper, velvetbean caterpillar, green cloverworm, armyworm" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="6" Margin="0,0,0,0"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Corn Earworm" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="7" Margin="0,0,0,0"/>
+                    <TextBlock  TextWrapping="Wrap" Text="Kudzu Bug" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="8" Margin="0,0,0,0"/>
+
+                    <TextBox x:Name="itxtr0c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr1c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="2" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr2c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr3c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="6" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr4c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr5c0" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="1" Height="24" Margin="0,0,0,0" Grid.Row="8" TextWrapping="Wrap" Text="4" VerticalAlignment="Center" FontSize="14" TextAlignment="Right" TextDecorations="Underline" />
+                    <Label Foreground="LightBlue" Content="Nymphs" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="8" Grid.Column="2" Margin="0,0,0,0"/>
+
+                    <TextBox x:Name="itxtr0c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="9" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr1c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="18" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr2c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="6" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr3c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="29" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr4c1" PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="9" VerticalAlignment="Center" FontSize="14" TextAlignment="Center" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="itxtr5c1"  PreviewTextInput="textPreviewTextInput" Background="Transparent" BorderBrush="Transparent" Foreground="LightBlue" Grid.Column="3" Height="24" Margin="0,0,0,0" Grid.Row="8" TextWrapping="Wrap" Text="25" VerticalAlignment="Center" FontSize="14" TextAlignment="Right" TextDecorations="Underline"/>
+                    <Label Foreground="LightBlue" Content="Nymphs" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="8" Grid.Column="4" Margin="0,0,0,0"/>
+
+                    <Label Background="White" Height="1" Margin="0,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" Grid.Row="3"/>
+                    <Label Background="White" Height="1" Margin="0,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.Row="1" Grid.Column="1"/>
+                    <Label Background="White" Height="1" Margin="0,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.Row="2" Grid.Column="1"/>
+                    
+                    <Label Background="White" Width="1" Margin="0,0,0,0" HorizontalAlignment="Left" Grid.Column="1" Grid.RowSpan="9" />
+                    <Label Background="White" Width="1" Margin="0,0,0,0" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" />
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="btnSaveData" Content="Save Data" Background="LightBlue" Margin="10,0,10,10" Click="btnSaveData_Click" Height="32" VerticalAlignment="Bottom" ToolTip="Saves all changes"/>
+    </Grid>
+</UserControl>

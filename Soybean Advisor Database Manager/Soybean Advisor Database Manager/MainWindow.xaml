@@ -1,0 +1,55 @@
+﻿<Window xmlns:Soybean_Advisor_Database_Manager="clr-namespace:Soybean_Advisor_Database_Manager"  x:Class="Soybean_Advisor_Database_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Soybean Advisor Database Manager" 
+        WindowState="Maximized"
+        Background="#FFE5E5E5" 
+        MinHeight="480"
+        MinWidth="640"
+        Height="480" Width="640" Icon="Resources/Soybean512.ico">
+    <Grid>
+        <DockPanel x:Name="dockPanel">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem x:Name="Help" Header="_Help" Click="Help_Click"/>
+                    <MenuItem x:Name="Close" Header="_Close" Click="Close_Click"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        
+        <TabControl Margin="0,22,0,0.5">
+            <TabItem Header="Disease Database">
+                <Grid Background="Green">
+                    <!--   -->
+                    <Soybean_Advisor_Database_Manager:DiseaseDatabaseControl /> 
+                </Grid>
+            </TabItem>
+            <TabItem Header="Insect Database">
+                <Grid Background="Green">
+                    <!--   -->
+                    <Soybean_Advisor_Database_Manager:InsectDatabaseControl />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Deficiency Database">
+                <Grid Background="Green">
+                    <!--  -->
+                    <Soybean_Advisor_Database_Manager:DeficiencyDatabaseControl/> 
+                </Grid>
+            </TabItem>
+            <TabItem Header="Version Control">
+                <Grid Background="Green">
+                    <!-- -->
+                    <Soybean_Advisor_Database_Manager:DatabaseVersionControl/> 
+                </Grid>
+            </TabItem>
+            <TabItem Header="Data">
+                <Grid Background="Green">
+                    <!-- -->
+                    <Soybean_Advisor_Database_Manager:DataControl/> 
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
